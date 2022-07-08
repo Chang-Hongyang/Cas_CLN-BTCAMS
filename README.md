@@ -8,7 +8,8 @@ pretrained model：
 (You should download by yourself from google. The folder is too large. https://huggingface.co/hfl/chinese-roberta-wwm-ext-large)  
 
 data:   
-	CMeIE is also public available. Guan, T., Zan, H., Zhou, X., Xu, H., Zhang, K. (2020). CMeIE: Construction and Evaluation of Chinese Medical Information Extraction Dataset. In: Zhu, X., Zhang, M., Hong, Y., He, R. (eds) Natural Language Processing and Chinese Computing. NLPCC 2020. Lecture Notes in Computer Science(), vol 12430. Springer, Cham. https://doi.org/10.1007/978-3-030-60450-9_22  
+    CMeIE is also public available. Guan, T., Zan, H., Zhou, X., Xu, H., Zhang, K. (2020). CMeIE: Construction and Evaluation of Chinese Medical Information Extraction Dataset. In: Zhu, X., Zhang, M., Hong, Y., He, R. (eds) Natural Language Processing and Chinese Computing. NLPCC 2020. Lecture Notes in Computer Science(), vol 12430. Springer, Cham. https://doi.org/10.1007/978-3-030-60450-9_22  
+    You can use your data by following the CMeIE's format or adjusting the code/spo_*/data_loader.py.  
 raw_data:  
 	|----test_data.json  
 	|----train_data.json  
@@ -25,5 +26,5 @@ requirement:
   ----transformers==2.2.2  
   
 mkdir output_models  
-train: train_*.sh  
-test: test_*.sh  
+train: bash train_*.sh  
+test: bash test_*.sh  
