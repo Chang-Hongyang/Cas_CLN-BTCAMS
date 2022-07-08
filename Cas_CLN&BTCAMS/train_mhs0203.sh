@@ -1,0 +1,1 @@
+python main_mhs.py --input user_data/split_data/data_set_2/ --output output_models/out_put_16/ --bert_model  /home/tfguan/bert/chinese_roberta_wwm_ext_pytorch/ --train_batch_size 12 --train_mode train
